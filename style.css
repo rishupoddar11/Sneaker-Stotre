@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;       /*New-don't allow flow(scroll) in X-direction*/
+}
+
+.store{
+    margin: auto;
+    width: 60%;
+    min-height: 100%;         /*New-Occupai full height*/
+}
+
+h1{
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    padding: 30px;
+}
+
+.shoes{
+    display: flex;
+    flex-wrap: wrap;                  /*New- To Wrap item */
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    border-radius: 30px;
+    width: 30%;
+    min-height: 450px;
+    padding: 10px;
+    box-shadow: 7px 7px 30px rgb(158, 158, 158);  /*Box-shadow contain 4 items*/   /*New-box-shadow:7px(X-direction) 7px(Y-direction) 30px(blur) colour*/ 
+    margin-bottom: 40px;
+}
+
+.image{
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.image >img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /*New-for cover the image instead of squiz*/
+}
+
+.image >img:hover{
+    scale: 1.1;                    /*New-for scaling of image*/
+    transition: 0.3s all ease-in; /*New-for smooth scaling or to avoid jerk during scaling*/
+}
+
+.detail{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cart >img{
+    width: 45px;
+    cursor: grab;
+}
+
+#text{
+    font-size: larger;
+}
