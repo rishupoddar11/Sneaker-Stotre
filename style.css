@@ -24,8 +24,8 @@ h1{
 }
 
 .shoes{
-    display: flex;
-    flex-wrap: wrap;                  /*New- To Wrap item */
+    display: flex;                 /* New- To Wrap item */
+    flex-wrap: wrap;               /* New- To Wrap item */
     justify-content: space-between;
     width: 100%;
     height: 100%;
